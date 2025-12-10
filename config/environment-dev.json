@@ -1,0 +1,45 @@
+{
+  "environment": "dev",
+  "region": "us-east-1",
+  "accountId": "794250698517",
+  "stackName": "contract-ai-infra-dev",
+  "s3": {
+    "frontendBucket": "contract-ai-frontend-dev-794250698517",
+    "documentBucket": "contract-ai-documents-dev-794250698517",
+    "frontendWebsiteUrl": "http://contract-ai-frontend-dev-794250698517.s3-website-us-east-1.amazonaws.com"
+  },
+  "dynamodb": {
+    "analysisResultsTable": "contract-ai-analysis-results-dev",
+    "comparisonResultsTable": "contract-ai-comparison-results-dev",
+    "ttlDays": 30
+  },
+  "iam": {
+    "lambdaExecutionRoleArn": "arn:aws:iam::794250698517:role/contract-ai-lambda-execution-dev",
+    "bedrockAgentRoleArn": "arn:aws:iam::794250698517:role/contract-ai-bedrock-agent-dev",
+    "apiGatewayRoleArn": "arn:aws:iam::794250698517:role/contract-ai-apigateway-dev"
+  },
+  "cloudwatch": {
+    "apiGatewayLogGroup": "/aws/apigateway/contract-ai-api-dev",
+    "logLevel": "INFO"
+  },
+  "lambda": {
+    "timeout": 60,
+    "memorySize": 1024
+  },
+  "bedrock": {
+    "modelId": "anthropic.claude-3-sonnet-20240229-v1:0",
+    "maxTokens": 4096,
+    "temperature": 0.7
+  },
+  "apiGateway": {
+    "rateLimit": 100,
+    "burstLimit": 200
+  },
+  "observability": {
+    "enableTracing": true,
+    "enableMetrics": true,
+    "cloudwatchLogGroup": "/aws/contract-ai/dev",
+    "xrayDaemonAddress": "127.0.0.1:2000"
+  },
+  "generatedAt": "2025-10-10T02:05:23Z"
+}

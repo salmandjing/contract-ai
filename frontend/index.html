@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contract AI Platform - AgentCore</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <!-- Login Screen (DISABLED - Authentication bypassed) -->
+    <div id="loginScreen" class="login-screen" style="display: none">
+      <div class="login-container">
+        <div class="login-header">
+          <h1>⚖️ Contract AI Platform</h1>
+          <p class="subtitle">Powered by AWS Bedrock AgentCore</p>
+        </div>
+        <div class="login-body">
+          <p class="login-description">
+            Sign in to access AI-powered contract analysis
+          </p>
+          <button id="loginButton" class="btn btn-primary btn-large">
+            <span class="btn-icon">🔐</span>
+            Sign in with Cognito
+          </button>
+          <div
+            id="loginError"
+            class="error-message"
+            style="display: none"
+          ></div>
+          <div
+            id="loginStatus"
+            class="status-message"
+            style="display: none"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Application (Authentication bypassed - always visible) -->
+    <div id="appContainer" class="app-container" style="display: block">
+      <!-- Header -->
+      <header class="app-header">
+        <div class="header-content">
+          <div class="header-left">
+            <h1 class="app-logo">⚖️ Contract AI Platform</h1>
+            <span class="app-version">AgentCore</span>
+          </div>
+          <div class="header-right">
+            <div class="user-info" id="userInfo">
+              <span class="user-name" id="userName">User</span>
+              <button id="logoutButton" class="btn btn-secondary btn-small">
+                Logout
+              </button>
+            </div>
+            <div class="connection-status" id="connectionStatus">
+              <span class="status-indicator"></span>
+              <span class="status-text">Connected</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Tab Navigation -->
+      <nav class="tab-navigation" id="tabNavigation">
+        <button class="tab-button active" data-tab="analyze">
+          <span class="tab-icon">📄</span>
+          <span class="tab-label">Analyze</span>
+        </button>
+        <button class="tab-button" data-tab="compare">
+          <span class="tab-icon">🔄</span>
+          <span class="tab-label">Compare</span>
+        </button>
+        <button class="tab-button" data-tab="batch">
+          <span class="tab-icon">📦</span>
+          <span class="tab-label">Batch</span>
+        </button>
+        <button class="tab-button" data-tab="observability">
+          <span class="tab-icon">📊</span>
+          <span class="tab-label">Observability</span>
+        </button>
+      </nav>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Analyze Tab -->
+        <div class="tab-content active" id="analyzeTab">
+          <div class="tab-header">
+            <h2>📄 Contract Analysis</h2>
+            <p class="tab-description">
+              Upload or paste a contract for AI-powered analysis
+            </p>
+          </div>
+          <div class="tab-body" id="analyzeTabBody">
+            <!-- Content will be loaded by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Compare Tab -->
+        <div class="tab-content" id="compareTab">
+          <div class="tab-header">
+            <h2>🔄 Contract Comparison</h2>
+            <p class="tab-description">Compare two contracts side-by-side</p>
+          </div>
+          <div class="tab-body" id="compareTabBody">
+            <!-- Content will be loaded by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Batch Tab -->
+        <div class="tab-content" id="batchTab">
+          <div class="tab-header">
+            <h2>📦 Batch Processing</h2>
+            <p class="tab-description">
+              Process multiple contracts in parallel
+            </p>
+          </div>
+          <div class="tab-body" id="batchTabBody">
+            <!-- Content will be loaded by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Observability Tab -->
+        <div class="tab-content" id="observabilityTab">
+          <div class="tab-header">
+            <h2>📊 Observability Dashboard</h2>
+            <p class="tab-description">
+              Monitor agent performance and system health
+            </p>
+          </div>
+          <div class="tab-body" id="observabilityTabBody">
+            <!-- Content will be loaded by JavaScript -->
+          </div>
+        </div>
+      </main>
+
+      <!-- Toast Container -->
+      <div class="toast-container" id="toastContainer"></div>
+
+      <!-- Modal Container -->
+      <div class="modal-overlay" id="modalOverlay"></div>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/api-client.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/analyze-tab.js"></script>
+    <script src="js/compare-tab.js"></script>
+    <script src="js/batch-tab.js"></script>
+    <script src="js/observability-tab.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

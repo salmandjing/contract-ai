@@ -1,0 +1,73 @@
+POWER PURCHASE AGREEMENT
+
+This agreement is between ABC Energy Company and XYZ Utility for the sale of power.
+
+BASIC TERMS
+
+The seller will sell power to the buyer from a solar facility. The facility is located somewhere in Nevada and has a capacity of approximately 25 MW, give or take a few MW depending on final construction.
+
+TERM
+This agreement starts when we both sign it and lasts for some period of time, probably around 15-20 years, but we can discuss this later. The facility should be operational sometime in 2024 or 2025, depending on various factors.
+
+PRICING
+The buyer will pay the seller for electricity delivered. The price will be competitive with market rates at the time of delivery. We expect this to be somewhere between $40-60 per MWh, but this may change based on market conditions, regulatory changes, or other unforeseen circumstances.
+
+If the seller delivers more power than expected, the buyer might pay a bonus. If less power is delivered, we'll figure out what to do then.
+
+PERFORMANCE
+The seller will try to deliver power when the sun is shining. The buyer understands that solar power is weather dependent and won't hold the seller responsible for cloudy days or other acts of God.
+
+The facility should generate a reasonable amount of power each year, probably around 50,000 MWh annually, but this is just an estimate and actual results may vary significantly.
+
+PAYMENTS
+The buyer will pay invoices when convenient, usually within 30-60 days. Late fees may apply but we haven't decided on the rate yet.
+
+INSURANCE
+Both parties will maintain appropriate insurance coverage. The seller will have some liability insurance, probably a few million dollars worth, and will add the buyer as additional insured if requested.
+
+FORCE MAJEURE
+If something bad happens that's nobody's fault, like earthquakes, wars, or government shutdowns, then neither party has to perform their obligations until things get back to normal. This could include things like supply chain disruptions, labor shortages, or changes in environmental regulations.
+
+DEFAULT
+If either party doesn't do what they're supposed to do, the other party can complain about it. If the problem isn't fixed within a reasonable time (maybe 30 days, maybe longer), then the non-breaching party can terminate the agreement or seek other remedies as appropriate.
+
+REGULATORY STUFF
+Both parties will comply with applicable laws and regulations, whatever those might be at the time. The seller believes the facility will qualify for renewable energy credits but makes no guarantees.
+
+If new regulations are passed that make this agreement uneconomical for either party, we'll renegotiate or terminate as mutually agreed.
+
+DISPUTE RESOLUTION
+If we have disagreements, we'll try to work them out like reasonable people. If that doesn't work, we might try mediation or arbitration, or just go to court in whatever jurisdiction makes sense at the time.
+
+MISCELLANEOUS PROVISIONS
+This agreement can be changed if both parties agree in writing. It will be governed by the laws of some state, probably Nevada or California.
+
+Either party can assign this agreement to affiliates or in connection with financing, subject to reasonable consent requirements.
+
+The parties acknowledge that this is a preliminary agreement and that a more detailed contract will be negotiated and executed prior to the start of construction. Many terms remain to be determined through good faith negotiations.
+
+This agreement represents the current understanding between the parties but is subject to due diligence, regulatory approvals, financing arrangements, and other conditions that may be specified in the definitive agreement.
+
+SIGNATURES
+
+ABC Energy Company                      XYZ Utility
+
+By: _________________________          By: _________________________
+Name: [To be filled in]                Name: [To be filled in]  
+Title: [To be filled in]               Title: [To be filled in]
+Date: _______________                   Date: _______________
+
+NOTES:
+- Final contract terms to be negotiated
+- Pricing subject to market conditions
+- Performance guarantees to be determined
+- Insurance requirements to be finalized
+- Regulatory approvals pending
+- Environmental impact assessment ongoing
+- Interconnection studies not yet complete
+- Financing arrangements preliminary
+- Construction timeline tentative
+- Force majeure provisions may be expanded
+- Dispute resolution mechanism to be refined
+
+[This appears to be a draft or letter of intent rather than a final binding agreement. Many critical terms are undefined or subject to future negotiation. Legal review strongly recommended before execution.]

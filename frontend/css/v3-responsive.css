@@ -1,0 +1,378 @@
+/* ============================================
+   Contract AI Platform V3 - Responsive Styles
+   ============================================ */
+
+/* Tablet Styles (768px - 1199px) */
+@media (max-width: 1199px) {
+  .header-content {
+    padding: var(--space-4);
+  }
+
+  .main-content {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .tab-navigation {
+    padding: 0 var(--space-4);
+    justify-content: flex-start;
+  }
+
+  .tab-button {
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .card {
+    padding: var(--space-5);
+  }
+
+  .modal {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Styles (320px - 767px) */
+@media (max-width: 767px) {
+  :root {
+    --text-2xl: 1.25rem;
+    --text-xl: 1.125rem;
+    --text-lg: 1rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-3);
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .app-logo {
+    font-size: var(--text-xl);
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .connection-status {
+    font-size: var(--text-xs);
+    padding: var(--space-2) var(--space-3);
+  }
+
+  /* Mobile Tab Navigation */
+  .tab-navigation {
+    padding: 0;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tab-navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-button {
+    flex-direction: column;
+    padding: var(--space-3);
+    gap: var(--space-2);
+    min-width: 80px;
+  }
+
+  .tab-icon {
+    font-size: var(--text-lg);
+  }
+
+  .tab-label {
+    font-size: var(--text-xs);
+  }
+
+  /* Mobile Main Content */
+  .main-content {
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .tab-header h2 {
+    font-size: var(--text-xl);
+  }
+
+  .tab-description {
+    font-size: var(--text-base);
+  }
+
+  /* Mobile Cards */
+  .card {
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  /* Mobile Buttons */
+  .btn {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--text-sm);
+  }
+
+  .btn-lg {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-base);
+  }
+
+  .btn-sm {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-xs);
+  }
+
+  /* Mobile Forms */
+  .form-input,
+  .form-textarea,
+  .form-select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .form-textarea {
+    min-height: 150px;
+  }
+
+  /* Mobile File Upload */
+  .file-upload {
+    padding: var(--space-6);
+  }
+
+  .file-upload-icon {
+    font-size: 2rem;
+  }
+
+  .file-upload-text {
+    font-size: var(--text-base);
+  }
+
+  /* Mobile Modal */
+  .modal {
+    width: 95%;
+    max-height: 95vh;
+    border-radius: var(--radius-lg);
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: var(--space-4);
+  }
+
+  .modal-title {
+    font-size: var(--text-lg);
+  }
+
+  .modal-footer {
+    flex-direction: column;
+  }
+
+  .modal-footer .btn {
+    width: 100%;
+  }
+
+  /* Mobile Toast */
+  .toast-container {
+    top: var(--space-3);
+    right: var(--space-3);
+    left: var(--space-3);
+  }
+
+  .toast {
+    min-width: auto;
+    width: 100%;
+  }
+
+  /* Mobile Loading */
+  .loading-container {
+    padding: var(--space-6);
+  }
+
+  .spinner {
+    width: 32px;
+    height: 32px;
+    border-width: 3px;
+  }
+
+  .loading-text {
+    font-size: var(--text-base);
+  }
+
+  /* Mobile Empty State */
+  .empty-state {
+    padding: var(--space-6);
+  }
+
+  .empty-state-icon {
+    font-size: 3rem;
+  }
+
+  .empty-state-title {
+    font-size: var(--text-lg);
+  }
+
+  /* Mobile File List */
+  .file-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .file-info {
+    width: 100%;
+  }
+
+  .file-remove {
+    align-self: flex-end;
+  }
+
+  /* Mobile Card Footer */
+  .card-footer {
+    flex-direction: column;
+  }
+
+  .card-footer .btn {
+    width: 100%;
+  }
+}
+
+/* Small Mobile (320px - 479px) */
+@media (max-width: 479px) {
+  .app-logo {
+    font-size: var(--text-lg);
+  }
+
+  .tab-button {
+    min-width: 70px;
+    padding: var(--space-2);
+  }
+
+  .main-content {
+    padding: var(--space-3) var(--space-2);
+  }
+
+  .card {
+    padding: var(--space-3);
+  }
+}
+
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+  .header-content,
+  .main-content {
+    max-width: 1600px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch targets */
+  .btn,
+  .tab-button,
+  .file-remove,
+  .modal-close,
+  .toast-close {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects */
+  .card:hover,
+  .btn:hover,
+  .tab-button:hover {
+    transform: none;
+  }
+
+  /* Improve scrolling */
+  .tab-navigation,
+  .main-content {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .app-header,
+  .tab-navigation,
+  .btn,
+  .toast-container,
+  .modal-overlay {
+    display: none !important;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .tab-content {
+    display: block !important;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid var(--gray-300);
+    page-break-inside: avoid;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .spinner {
+    animation: none;
+    border-top-color: var(--primary-blue);
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .card {
+    border: 2px solid var(--gray-900);
+  }
+
+  .btn-primary {
+    background: var(--gray-900);
+    border: 2px solid var(--white);
+  }
+
+  .tab-button.active {
+    border-bottom-width: 4px;
+  }
+}
+
+/* Dark Mode Support (Future Enhancement) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles can be added here in future */
+}
+
+/* Landscape Orientation on Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .header-content {
+    flex-direction: row;
+  }
+
+  .tab-button {
+    flex-direction: row;
+    min-width: auto;
+  }
+
+  .modal {
+    max-height: 85vh;
+  }
+}

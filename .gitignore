@@ -1,0 +1,100 @@
+# Credentials and secrets (NEVER COMMIT THESE)
+aws-auth.md
+gitlab-access.md
+local_credentials.sh
+.env
+.env.local
+credentials.json
+secrets/
+
+# Note: setup_credentials.sh is safe to commit (no hardcoded credentials)
+
+# AWS
+.aws/
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# PDFs and large files (optional)
+*.pdf
+
+# Embedded repos
+amazon-bedrock-agentcore-samples/
+archive/
+
+# Development and presentation files (prevent confusion)
+*PRESENTATION*
+*STATUS*
+*READY*
+*FINAL*
+*cleanup*
+*CLEANUP*
+setup_credentials.sh
+local_credentials.sh
+
+# Backup files
+*.backup
+*.bak
+*_backup*
+*.local_backup
+
+# Duplicate/redundant files
+*duplicate*
+*DUPLICATE*
+*redundant*
+*REDUNDANT*
+
+# Kiro development specs (keep development clean)
+.kiro/
+
+# Test output files
+test_*.json
+test_*.txt
+debug_*.html
+*test_results*
+*TEST_RESULTS*

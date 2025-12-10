@@ -1,0 +1,87 @@
+# Contract AI Platform V5 - Dependencies
+# Core AWS and AI dependencies
+
+# AWS SDK and Bedrock
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Environment and configuration
+python-dotenv>=1.0.0
+
+# PDF processing
+PyPDF2>=3.0.0
+
+# HTTP requests (for API calls)
+requests>=2.31.0
+
+# Web framework (if using Flask endpoints)
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Data validation and parsing
+pydantic>=2.0.0
+
+# YAML configuration support
+pyyaml>=6.0.0
+
+# OpenTelemetry for observability (optional but recommended)
+opentelemetry-api>=1.20.0
+opentelemetry-sdk>=1.20.0
+opentelemetry-exporter-otlp>=1.20.0
+opentelemetry-instrumentation-boto3>=0.41b0
+
+# AWS X-Ray integration (optional)
+aws-xray-sdk>=2.12.0
+
+# Memory and caching (optional - for production)
+redis>=5.0.0
+pymemcache>=4.0.0
+
+# Development and testing dependencies
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+
+# Mocking for tests
+moto>=4.2.0
+
+# Code formatting and linting (development)
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Documentation generation (optional)
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.3.0
+
+# Additional file format support (optional)
+python-docx>=1.0.0
+openpyxl>=3.1.0
+
+# Async support
+aiohttp>=3.8.0
+aiofiles>=23.0.0
+
+# JSON schema validation
+jsonschema>=4.19.0
+
+# Date/time utilities
+python-dateutil>=2.8.0
+
+# Logging enhancements
+structlog>=23.0.0
+
+# Performance monitoring (optional)
+psutil>=5.9.0
+
+# Security utilities
+cryptography>=41.0.0
+
+# CLI utilities (for scripts)
+click>=8.1.0
+rich>=13.0.0
+
+# Note: Some packages may not be available on all systems
+# Install core dependencies first:
+#   pip install boto3 python-dotenv PyPDF2 requests
+# Then install optional dependencies as needed

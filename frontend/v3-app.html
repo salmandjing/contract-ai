@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contract AI Platform V5</title>
+    <link rel="stylesheet" href="/css/v3-styles.css?v=6" />
+    <link rel="stylesheet" href="/css/v3-components.css?v=6" />
+    <link rel="stylesheet" href="/css/v3-responsive.css?v=6" />
+    <link rel="stylesheet" href="/css/clauses-tab.css?v=1760460478" />
+    <link rel="stylesheet" href="/css/template-generator.css?v=1760457677" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 class="app-logo">⚖️ Contract AI Platform</h1>
+          <span class="app-version">V5</span>
+        </div>
+        <div class="header-right">
+          <div class="connection-status" id="connectionStatus">
+            <span class="status-indicator"></span>
+            <span class="status-text">Connected</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <nav class="tab-navigation" id="tabNavigation">
+      <button class="tab-button active" data-tab="analyze">
+        <span class="tab-icon">📄</span>
+        <span class="tab-label">Analyze</span>
+      </button>
+      <button class="tab-button" data-tab="compare">
+        <span class="tab-icon">🔄</span>
+        <span class="tab-label">Compare</span>
+      </button>
+      <button class="tab-button" data-tab="generate">
+        <span class="tab-icon">⚡</span>
+        <span class="tab-label">Generate</span>
+      </button>
+      <button class="tab-button" data-tab="clauses">
+        <span class="tab-icon">🔧</span>
+        <span class="tab-label">Clauses</span>
+      </button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Analyze Tab -->
+      <div class="tab-content active" id="analyzeTab">
+        <div class="tab-header">
+          <h2>📄 Contract Analysis</h2>
+          <p class="tab-description">
+            Upload or paste a contract for AI-powered analysis
+          </p>
+        </div>
+        <div class="tab-body">
+          <!-- Content will be loaded by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Compare Tab -->
+      <div class="tab-content" id="compareTab">
+        <div class="tab-header">
+          <h2>🔄 Contract Comparison</h2>
+          <p class="tab-description">Compare two contracts side-by-side</p>
+        </div>
+        <div class="tab-body">
+          <!-- Content will be loaded by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Generate Tab -->
+      <div class="tab-content" id="generateTab">
+        <div class="tab-header">
+          <h2>⚡ Contract Generation</h2>
+          <p class="tab-description">Generate contracts from templates</p>
+        </div>
+        <div class="tab-body">
+          <!-- Content will be loaded by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Clauses Tab -->
+      <div class="tab-content" id="clausesTab">
+        <div class="tab-header">
+          <h2>🔧 AI Clause Assistant</h2>
+          <p class="tab-description">
+            Extract, analyze, and improve contract clauses with AI
+          </p>
+        </div>
+        <div class="tab-body">
+          <!-- Content will be loaded by JavaScript -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Modal Container -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <!-- JavaScript Modules -->
+    <script src="/js/v3-utils.js?v=1760467101"></script>
+    <script src="/js/v3-error-handler.js?v=6"></script>
+    <script src="/js/v3-performance.js?v=6"></script>
+    <script src="/js/v3-api.js?v=6"></script>
+    <script src="/js/v3-components.js?v=6"></script>
+    <script src="/js/v3-tour.js?v=6"></script>
+    <script src="/js/clauses-tab.js?v=1760462530"></script>
+    <script src="/js/template-generator.js?v=1760458937"></script>
+    <script src="/js/v3-app.js?v=1760464695"></script>
+
+    <!-- Initialize Error Handling & Connection Monitoring -->
+    <script>
+      // Initialize connection monitor on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        // ConnectionMonitor.init(); // Disabled - not implemented yet
+
+        // Load error log from localStorage if available
+        try {
+          const savedLog = localStorage.getItem("error_log");
+          if (savedLog) {
+            ErrorHandler.errorLog = JSON.parse(savedLog);
+          }
+        } catch (e) {
+          console.warn("Failed to load error log:", e);
+        }
+
+        // Global error handler
+        window.addEventListener("error", (event) => {
+          ErrorHandler.logError(event.error || new Error(event.message), {
+            type: "UNCAUGHT_ERROR",
+            filename: event.filename,
+            lineno: event.lineno,
+            colno: event.colno,
+          });
+        });
+
+        // Unhandled promise rejection handler
+        window.addEventListener("unhandledrejection", (event) => {
+          ErrorHandler.logError(event.reason, {
+            type: "UNHANDLED_REJECTION",
+            promise: event.promise,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

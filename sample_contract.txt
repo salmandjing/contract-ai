@@ -1,0 +1,147 @@
+POWER PURCHASE AGREEMENT
+
+This Power Purchase Agreement is entered into as of March 1, 2024 between Solar Genesis LLC (Seller) and Riverside Municipal Power Authority (Buyer).
+
+ARTICLE 1: DEFINITIONS
+
+1.1 Contract Capacity
+Contract Capacity means the maximum electrical capacity of 75 megawatts AC.
+
+1.2 Delivery Point
+Delivery Point means the interconnection point at the Riverside substation.
+
+1.3 Energy
+Energy means three-phase electrical energy measured in megawatt-hours.
+
+1.4 Facility
+Facility means the Desert Bloom Solar Facility located in San Bernardino County.
+
+ARTICLE 2: TERM AND EFFECTIVENESS
+
+2.1 Term
+This Agreement shall commence on the Commercial Operation Date and continue for twenty (20) years.
+
+2.2 Commercial Operation Date
+The Commercial Operation Date shall be no later than December 31, 2025.
+
+ARTICLE 3: FACILITY DEVELOPMENT
+
+3.1 Development Obligations
+Seller shall develop, construct, and commission the Facility in accordance with the project schedule.
+
+3.2 Permits and Approvals
+Seller shall obtain all necessary permits, licenses, and approvals required for the Facility.
+
+ARTICLE 4: FACILITY OPERATIONS
+
+4.1 Operations and Maintenance
+Seller shall operate and maintain the Facility in accordance with good utility practices.
+
+4.2 Availability Standards
+Seller shall maintain the Facility to achieve an annual availability of at least 95%.
+
+ARTICLE 5: DELIVERY OF ENERGY
+
+5.1 Delivery Obligation
+Seller shall deliver all Energy produced by the Facility to the Delivery Point.
+
+5.2 Scheduling
+Seller shall provide day-ahead and hour-ahead forecasts of expected generation.
+
+ARTICLE 6: PRICING AND PAYMENT
+
+6.1 Purchase Price
+The purchase price shall be $45 per megawatt-hour for the first ten years.
+
+6.2 Payment Terms
+Buyer shall pay all undisputed amounts within thirty (30) days of invoice receipt.
+
+6.3 Price Adjustments
+The purchase price shall escalate at 2% annually beginning in year eleven.
+
+ARTICLE 7: REPRESENTATIONS AND WARRANTIES
+
+7.1 Seller Representations
+Seller represents that it has full authority to enter into this Agreement.
+
+7.2 Buyer Representations
+Buyer represents that it has the financial capability to make all payments.
+
+ARTICLE 8: CREDIT AND COLLATERAL
+
+8.1 Credit Requirements
+Seller shall maintain a minimum credit rating or provide collateral as specified.
+
+8.2 Security
+Buyer may require additional security if Seller's creditworthiness deteriorates.
+
+ARTICLE 9: METERING
+
+9.1 Metering Equipment
+All Energy delivered shall be measured by revenue-grade meters.
+
+9.2 Meter Testing
+Meters shall be tested annually in accordance with industry standards.
+
+ARTICLE 10: FORCE MAJEURE
+
+10.1 Force Majeure Events
+Neither party shall be liable for failure to perform due to force majeure events.
+
+10.2 Notice Requirements
+The affected party shall provide prompt written notice of any force majeure event.
+
+ARTICLE 11: EVENTS OF DEFAULT
+
+11.1 Events of Default
+An Event of Default includes failure to make payment or material breach of obligations.
+
+11.2 Remedies
+Upon an Event of Default, the non-defaulting party may terminate this Agreement.
+
+ARTICLE 12: INDEMNIFICATION
+
+12.1 Seller Indemnification
+Seller shall indemnify Buyer from claims arising from Seller's negligence or breach.
+
+12.2 Buyer Indemnification
+Buyer shall indemnify Seller from claims arising from Buyer's negligence or breach.
+
+ARTICLE 13: INSURANCE
+
+13.1 Required Coverage
+Seller shall maintain commercial general liability insurance of $5,000,000 per occurrence.
+
+13.2 Certificates
+Seller shall provide Buyer with certificates of insurance annually.
+
+ARTICLE 14: DISPUTE RESOLUTION
+
+14.1 Negotiation
+The parties shall attempt to resolve disputes through good faith negotiations.
+
+14.2 Arbitration
+Unresolved disputes shall be submitted to binding arbitration.
+
+ARTICLE 15: MISCELLANEOUS
+
+15.1 Governing Law
+This Agreement shall be governed by the laws of the State of California.
+
+15.2 Assignment
+Neither party may assign this Agreement without the prior written consent of the other party.
+
+15.3 Notices
+All notices shall be in writing and delivered by certified mail or email.
+
+15.4 Entire Agreement
+This Agreement constitutes the entire agreement between the parties.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+SOLAR GENESIS LLC                    RIVERSIDE MUNICIPAL POWER AUTHORITY
+
+By: _____________________           By: _____________________
+Name: Sarah Chen                     Name: James Richardson
+Title: CEO                           Title: Chief Executive Officer
+Date: March 1, 2024                  Date: March 1, 2024

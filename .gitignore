@@ -76,6 +76,7 @@ archive/
 *CLEANUP*
 setup_credentials.sh
 local_credentials.sh
+PRE_PUSH_CHECKLIST.md
 
 # Backup files
 *.backup

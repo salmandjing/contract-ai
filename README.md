@@ -55,6 +55,17 @@ The Contract AI Platform is an **enterprise-grade solution** that revolutionizes
 - Monitor system health and usage analytics
 - Debug and troubleshoot with detailed logs
 
+## 🌟 **What Makes This Platform Special?**
+
+This isn't just another AI chat tool - it's a **purpose-built contract analysis platform** with:
+
+- **🎯 Specialized AI Agents** - Custom-trained for legal document analysis
+- **📊 Structured Output** - Consistent, professional reports (not just chat responses)
+- **⚖️ Legal Expertise** - Built-in knowledge of contract law and compliance requirements
+- **🔄 Batch Processing** - Handle dozens of contracts simultaneously
+- **📈 Enterprise Features** - Observability, monitoring, and audit trails
+- **🛡️ Security First** - Enterprise-grade AWS infrastructure with proper credential management
+
 ## 🚀 **Why Use This Platform?**
 
 | Traditional Contract Review     | Contract AI Platform          |
@@ -82,7 +93,7 @@ The Contract AI Platform is an **enterprise-grade solution** that revolutionizes
 3. **Get instant results** with executive summary, risks, and recommendations
 4. **Export or share** your analysis with stakeholders
 
-The platform uses **Claude Sonnet 4** (the latest AI model) running on **AWS Bedrock** to provide enterprise-grade accuracy and security.
+The platform uses **Claude Sonnet 4** (the latest AI model) running on **AWS Bedrock Agents** to provide enterprise-grade accuracy, security, and scalability. Unlike simple AI chat interfaces, this platform provides structured analysis, risk assessment, and actionable insights specifically designed for legal and business professionals.
 
 ## 📖 Table of Contents
 
@@ -112,23 +123,39 @@ The platform uses **Claude Sonnet 4** (the latest AI model) running on **AWS Bed
 ### Setup
 
 ```bash
-# 1. Copy environment template
+# 1. Clone this repository
+git clone <your-repo-url>
+cd contract-ai-platform
+
+# 2. Copy environment template and add your AWS credentials
 cp .env.example .env
+nano .env  # Add your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 
-# 2. Edit .env and add your AWS credentials
-# IMPORTANT: Never commit the .env file!
-nano .env  # or use your preferred editor
-
-# 3. Install dependencies
+# 3. Install dependencies (or use install.sh for guided setup)
 pip install -r requirements.txt
 
-# 4. Start server
+# 4. Start the server
 python3 frontend_server.py 8094
+# Or use the startup script: ./start_server.sh
 ```
 
 ### Access the Application
 
 Open your browser to: **http://localhost:8094**
+
+### Try It Immediately
+
+Test the platform with the included sample contracts:
+
+```bash
+# Try a high-quality contract (should show low risk, detailed analysis)
+cat sample_contracts/good_ppa_solar_farm.txt
+
+# Try a problematic contract (should flag multiple issues)
+cat sample_contracts/problematic_ppa_issues.txt
+```
+
+Copy either contract text into the **Analyze** tab and click "Analyze Contract" to see the AI in action!
 
 > ⚠️ **Security Note**: The `.env` file contains sensitive credentials and should NEVER be committed to version control. It's already in `.gitignore`.
 
@@ -855,8 +882,12 @@ contract-ai-platform/
 │   └── template_generator_entrypoint.py     # Template gen
 │
 ├── config/                        # Configuration files
-│   └── aws_config.py             # AWS configuration
-│   └── bedrock_agent_config.json # Agent configurations
+│   ├── aws_config.py             # AWS service configuration
+│   ├── agentcore_config.py       # AgentCore configuration
+│   ├── bedrock_agent_config.json # Agent configurations
+│   ├── memory_client.py          # Memory management
+│   ├── observability.py          # Monitoring and tracing
+│   └── gateway_tool_registry.py  # Tool management
 │
 ├── frontend_server.py            # Main HTTP server
 ├── requirements.txt              # Python dependencies

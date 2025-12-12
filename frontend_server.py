@@ -226,8 +226,9 @@ class V3FrontendHandler(SimpleHTTPRequestHandler):
     
     def handle_file_upload(self):
         """Handle file upload and text extraction."""
-        import cgi
         import io
+        import email
+        from email.message import EmailMessage
         
         try:
             # Parse multipart form data
@@ -236,24 +237,57 @@ class V3FrontendHandler(SimpleHTTPRequestHandler):
                 self.send_error_response('Expected multipart/form-data', 400)
                 return
             
-            # Parse the form data
-            form = cgi.FieldStorage(
-                fp=self.rfile,
-                headers=self.headers,
-                environ={
-                    'REQUEST_METHOD': 'POST',
-                    'CONTENT_TYPE': content_type,
-                }
-            )
+            # Get boundary from content type
+            boundary = None
+            for part in content_type.split(';'):
+                part = part.strip()
+                if part.startswith('boundary='):
+                    boundary = part.split('=', 1)[1].strip('"')
+                    break
             
-            # Get the uploaded file
-            if 'file' not in form:
-                self.send_error_response('No file uploaded', 400)
+            if not boundary:
+                self.send_error_response('No boundary found in multipart data', 400)
                 return
             
-            file_item = form['file']
-            filename = file_item.filename
-            file_data = file_item.file.read()
+            # Read the request body
+            content_length = int(self.headers.get('Content-Length', 0))
+            if content_length == 0:
+                self.send_error_response('No content in request', 400)
+                return
+                
+            body = self.rfile.read(content_length)
+            
+            # Parse multipart data manually (Python 3.13+ compatible)
+            filename = None
+            file_data = None
+            
+            # Split by boundary
+            boundary_bytes = ('--' + boundary).encode()
+            parts = body.split(boundary_bytes)
+            
+            for part in parts:
+                if b'Content-Disposition: form-data' in part and b'name="file"' in part:
+                    # Extract filename
+                    lines = part.split(b'\r\n')
+                    for line in lines:
+                        if b'Content-Disposition:' in line:
+                            line_str = line.decode('utf-8', errors='ignore')
+                            if 'filename=' in line_str:
+                                filename_part = line_str.split('filename=')[1]
+                                filename = filename_part.strip('"').strip("'")
+                                break
+                    
+                    # Extract file data (after double CRLF)
+                    if b'\r\n\r\n' in part:
+                        file_data = part.split(b'\r\n\r\n', 1)[1]
+                        # Remove trailing boundary markers
+                        if file_data.endswith(b'\r\n'):
+                            file_data = file_data[:-2]
+                        break
+            
+            if not filename or file_data is None:
+                self.send_error_response('No file found in upload', 400)
+                return
             
             print(f"📄 Extracting text from: {filename}")
             

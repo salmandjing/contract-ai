@@ -1,4 +1,4 @@
-# PPA Contract Analysis Platform
+# Contract (PPA) Analysis Platform
 
 AI-powered analysis and comparison tool for Power Purchase Agreements (PPAs) and renewable energy contracts.
 
@@ -7,7 +7,7 @@ AI-powered analysis and comparison tool for Power Purchase Agreements (PPAs) and
 
 ## Overview
 
-This platform analyzes Power Purchase Agreements using AWS Bedrock's Claude Sonnet 4 model. It extracts key terms, identifies risks, and provides structured analysis for renewable energy contracts.
+This platform analyzes Power Purchase Agreements using AWS AgentCore and AWS Bedrock's Claude Sonnet 4 model. It extracts key terms, identifies risks, and provides structured analysis for renewable energy contracts.
 
 **Primary Use Case:** PPA analysis for solar, wind, and other renewable energy projects.
 
@@ -76,7 +76,7 @@ graph TB
 
 - **Frontend**: Web interface (HTML/CSS/JS) for uploading and viewing contract analysis
 - **Backend**: Python HTTP server (`frontend_server.py`) handling requests and file processing
-- **AI Engine**: AWS Bedrock Agents with Claude Sonnet 4 for contract analysis
+- **AI Engine**: AgentCore, AWS Bedrock Agents with Claude Sonnet 4 for contract analysis
 - **File Processing**: Support for PDF, TXT, DOCX text extraction
 - **API Layer**: REST endpoints for analysis, comparison, and batch processing
 
